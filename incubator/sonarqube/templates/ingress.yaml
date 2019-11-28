@@ -20,11 +20,11 @@ spec:
     - host: {{ $host }}
       http:
         paths:
-          - path: /
+          - path: "/"
             backend:
               serviceName: {{ $serviceName }}
               servicePort: {{ $servicePort }}
-          - path: /*
+          - path: "/*"
             backend:
               serviceName: {{ $serviceName }}
               servicePort: {{ $servicePort }}
